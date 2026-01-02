@@ -1,0 +1,32 @@
+header {
+	width: 100%;
+	display: flex;
+	gap: 15px;
+}
+
+.header__logo {
+	font-family: 'Inter-Black';
+	font-size: 32px;
+	color: white;
+	cursor: pointer;
+}
+
+.header__navigation {
+	width: 100%;
+	padding-top: 3px;
+	display: flex;
+	gap: 8px;
+
+	div {
+		width: 100%;
+	}
+}
+
+.header__link {
+	width: 36px;
+	height: 36px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}

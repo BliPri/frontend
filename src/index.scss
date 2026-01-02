@@ -1,0 +1,57 @@
+@font-face {
+  font-family: 'Inter-black';
+  src: url('./assets/fonts/Inter-Black.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'JetBrainsMono-medium';
+  src: url('./assets/fonts/JetBrainsMono-Medium.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'JetBrainsMono-regular';
+  src: url('./assets/fonts/JetBrainsMono-Regular.woff') format('woff');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: $night;
+}
+
+button {
+  border: none;
+  background: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.app {
+  padding-top: 32px;
+  padding-left: 180px;
+  padding-right: 180px;
+
+  display: grid;
+  grid-template-rows: 146px 428px 359px;
+}
+
+.page {
+  display: grid;
+  grid-template-rows: 188px 130px 60px;
+  justify-items: center;
+  gap: 25px;
+}
+
+.icon-hover-white {
+  svg path {
+    transition: 0.2s;
+  }
+
+  &:hover svg path {
+    fill: white;
+		fill-opacity: 1;
+  }
+}
