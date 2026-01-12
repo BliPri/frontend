@@ -1,8 +1,16 @@
+import { useRef } from 'react'
+import { ChecksTranslate } from '../../features/checksTranslate'
 import { useType } from './model/useType'
 import styles from './ui.module.scss'
 
 export function Typing() {
-	const words = useType()
+	const checksTranslateRef = useRef<ChecksTranslate | null>(null)
+
+	if (!checksTranslateRef.current) {
+    checksTranslateRef.current = new ChecksTranslate()
+  }
+	
+	const words = useType({ checksTranslate: checksTranslateRef.current })
 
 	return (
 		<div id='typing' className={styles.typing}>

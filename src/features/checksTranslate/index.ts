@@ -1,0 +1,1 @@
+export { ChecksTranslate } from './model';

@@ -1,3 +1,4 @@
 export const controllerMoveCaretka = {
-	noLetters: false
+	noLetters: false,
+	isNumberLetterChanged: true,
 }
